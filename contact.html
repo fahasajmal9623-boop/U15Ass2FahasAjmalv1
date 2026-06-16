@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulse VR | Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<div class="logo">
+<img src="Images/logo.png" alt="Pulse VR">
+<h2>Pulse VR</h2>
+</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="gamelibrary.html">Game Library</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="membership.html">Membership</a></li>
+<li><a href="accessibility.html">Accessibility</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<div class="nav-right">
+<input type="search" id="searchInput"
+placeholder="Search: Home, Games, Booking...">
+<button class="locator-btn">Store Locator</button>
+<iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:120px;height:40px;"src="https://www.clocklink.com/html5embed.php?clock=004&timezone=UnitedKingdom_London&color=black&size=120&Title=&Message=&Target=&From=2026,1,1,0,0,0&Color=black"></iframe>
+</div>
+<div class="hamburger" id="hamburger">
+   ☰
+</div>
+</nav>
+</header>
+<section class="page-hero">
+<h1>Get In Touch</h1>
+<p>
+           Have questions, feedback or need support? We’re here to help you
+           with your Pulse VR experience.
+</p>
+</section>
+<section class="contact-section">
+<div class="contact-container">
+<div class="contact-info">
+<h2>Contact Information</h2>
+<p><strong>Address:</strong><br>
+               123 VR Street<br>
+               Manchester, UK</p>
+<p><strong>Phone:</strong><br>
+               0161 123 4567</p>
+<p><strong>Email:</strong><br>
+               support@pulsevr.co.uk</p>
+<p><strong>Opening Hours:</strong><br>
+               Mon - Sun: 10:00 AM - 10:00 PM</p>
+</div>
+<div class="contact-form">
+<h2>Send Us A Message</h2>
+<form id="contactForm">
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="text" placeholder="Subject" required>
+<textarea placeholder="Your Message" required></textarea>
+<button type="submit" class="btn-primary">Send Message</button>
+</form>
+<p id="formMessage" style="margin-top:10px; color:#FFA213;"></p>
+</div>
+</div>
+</section>
+<section class="map">
+<h2>Find Us</h2>
+<div class="map-box">
+<p>
+               📍 Visit our Manchester VR Centre<br>
+               Easy access from city centre transport links
+</p>
+</div>
+</section>
+<section class="features">
+<h2>Frequently Asked Questions</h2>
+<div class="feature-grid">
+<div class="feature-card">
+<h3>Do I need experience?</h3>
+<p>No, our VR experiences are beginner friendly.</p>
+</div>
+<div class="feature-card">
+<h3>Can I book for groups?</h3>
+<p>Yes, we support group bookings and parties.</p>
+</div>
+<div class="feature-card">
+<h3>Is VR safe?</h3>
+<p>Yes, all sessions are supervised by trained staff.</p>
+</div>
+</div>
+</section>
+<footer>
+<div class="footer-content">
+<h3>Pulse VR</h3>
+<p>The Ultimate Virtual Reality Gaming Experience.</p>
+<div class="footer-links">
+<a href="#">Instagram</a>
+<a href="#">TikTok</a>
+<a href="#">Facebook</a>
+</div>
+<p>© 2026 Pulse VR. All Rights Reserved.</p>
+</div>
+</footer>
+<script src="script.js"></script>
+<div id="modal" class="modal">
+<div class="modal-content">
+<span id="closeModal">&times;</span>
+<h2>VR Trailer</h2>
+<p>Gameplay preview coming soon...</p>
+</div>
+</div>
+<script>
+document.addEventListener("submit", function(e) {
+   e.preventDefault();
+   const form = e.target;
+   const msg = document.getElementById("formMessage");
+   if (form.id === "contactForm") {
+       msg.innerText = "Thank you for contacting Pulse VR. We will get back to you soon.";
+       msg.style.color = "#FFA213";
+       form.reset();
+   }
+   if (form.id === "accessibilityForm") {
+       msg.innerText = "Thank you for your accessibility feedback. Your comments help us improve the experience for all visitors.";
+       msg.style.color = "#FFA213";
+       form.reset();
+   }
+});
+</script>
+</body>
+</html>

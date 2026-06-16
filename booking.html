@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulse VR | Booking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<div class="logo">
+<img src="Images/logo.png" alt="Pulse VR">
+<h2>Pulse VR</h2>
+</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="gamelibrary.html">Game Library</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="membership.html">Membership</a></li>
+<li><a href="accessibility.html">Accessibility</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<div class="nav-right">
+<input type="search" id="searchInput"
+placeholder="Search: Home, Games, Booking...">
+<button class="locator-btn">Store Locator</button>
+<iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:120px;height:40px;"src="https://www.clocklink.com/html5embed.php?clock=004&timezone=UnitedKingdom_London&color=black&size=120&Title=&Message=&Target=&From=2026,1,1,0,0,0&Color=black"></iframe>
+</div>
+<div class="hamburger" id="hamburger">
+   ☰
+</div>
+</nav>
+</header>
+<section class="page-hero">
+<h1>Select Your Experience</h1>
+<p>
+           Book now while your preferred time is still available!
+</p>
+</section>
+<section class="booking-games">
+<div class="games-grid">
+<div class="game-card">
+<span class="tag new-tag">NEW</span>
+<div class="game-image">
+<img src="Images/Age-of-Dinosaurs.png" alt="Age Of Dinosaurs">
+</div>
+<h3>VR™ Age Of Dinosaurs</h3>
+<p>Walk among giant dinosaurs in a prehistoric safari.</p>
+<div class="game-buttons">
+<button class="btn-primary">Book Now</button>
+</div>
+</div>
+<div class="game-card">
+<span class="tag best-tag">BEST SELLER</span>
+<div class="game-image">
+<img src="Images/Zombie-Survival.png" alt="Zombie Survival">
+</div>
+<h3>VR™ Zombie Survival</h3>
+<p>Team up and survive against endless zombie attacks.</p>
+<div class="game-buttons">
+<button class="btn-primary">Book Now</button>
+</div>
+</div>
+<div class="game-card">
+<span class="tag family-tag">GREAT FOR FAMILIES</span>
+<div class="game-image">
+<img src="Images/Jungle-Escape.png" alt="Jungle Escape">
+</div>
+<h3>VR™ Jungle Escape</h3>
+<p>Solve puzzles and escape a mysterious jungle world.</p>
+<div class="game-buttons">
+<button class="btn-primary">Book Now</button>
+</div>
+</div>
+<div class="game-card">
+<span class="tag best-tag">BEST SELLER</span>
+<div class="game-image">
+<img src="Images/Cyber-Arena.png" alt="Cyber Arena">
+</div>
+<h3>VR™ Cyber Arena</h3>
+<p>Battle in a futuristic multiplayer combat arena.</p>
+<div class="game-buttons">
+<button class="btn-primary">Book Now</button>
+</div>
+</div>
+<div class="game-card">
+<span class="tag family-tag">GREAT FOR FAMILIES</span>
+<div class="game-image">
+<img src="Images/Pirate-Adventure.png" alt="Pirate Adventure">
+</div>
+<h3>VR™ Pirate Adventure</h3>
+<p>Search for treasure and sail the virtual seas.</p>
+<div class="game-buttons">
+<button class="btn-primary">Book Now</button>
+</div>
+</div>
+</div>
+</section>
+<section class="booking-form-section">
+<h2>Complete Your Booking</h2>
+<form id="bookingForm">
+<div class="form-group">
+<input type="text" placeholder="First Name" required>
+</div>
+<div class="form-group">
+<input type="text" placeholder="Last Name" required>
+</div>
+<div class="form-group">
+<input type="email" placeholder="Email Address" required>
+</div>
+<div class="form-group">
+<input type="tel" placeholder="Phone Number" required>
+</div>
+<div class="form-group">
+<input type="number" placeholder="Number Of Players" min="1" required>
+</div>
+<div class="form-group">
+<input type="date" required>
+</div>
+<div class="form-group">
+<input type="time" required>
+</div>
+<div class="form-group">
+<select id="planSelect" required>
+<option value="">Select Plan</option>
+<option value="basic">Basic</option>
+<option value="standard">Standard</option>
+<option value="premium">Premium</option>
+</select>
+</div>
+<div class="form-group">
+<select required>
+<option value="">Select Experience</option>
+<option>Age Of Dinosaurs</option>
+<option>Zombie Survival</option>
+<option>Jungle Escape</option>
+<option>Cyber Arena</option>
+<option>Pirate Adventure</option>
+</select>
+</div>
+<input type="hidden" id="selectedGameInput">
+<button type="submit" class="btn-primary">
+               Confirm Booking
+</button>
+</form>
+</section>
+<section class="features">
+<h2>Why Book With Pulse VR?</h2>
+<div class="feature-grid">
+<div class="feature-card">
+<h3>Easy Online Booking</h3>
+<p>Reserve your experience in minutes.</p>
+</div>
+<div class="feature-card">
+<h3>Flexible Times</h3>
+<p>Choose a session that fits your schedule.</p>
+</div>
+<div class="feature-card">
+<h3>Group Friendly</h3>
+<p>Perfect for parties, friends and family.</p>
+</div>
+</div>
+</section>
+<footer>
+<div class="footer-content">
+<h3>Pulse VR</h3>
+<p>
+               The Ultimate Virtual Reality Gaming Experience.
+</p>
+<div class="footer-links">
+<a href="#">Instagram</a>
+<a href="#">TikTok</a>
+<a href="#">Facebook</a>
+</div>
+<p>
+               © 2026 Pulse VR. All Rights Reserved.
+</p>
+</div>
+</footer>
+<script src="script.js"></script>
+<div id="modal" class="modal">
+<div class="modal-content">
+<span id="closeModal">&times;</span>
+<h2>VR Trailer</h2>
+<p>Gameplay preview coming soon...</p>
+</div>
+</div>
+</body>
+</html>
